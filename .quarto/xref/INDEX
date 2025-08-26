@@ -1,0 +1,17 @@
+{
+  "about.qmd": {
+    "about.html": "3e1d8a5e"
+  },
+  "index.qmd": {
+    "index.html": "0c32acac"
+  },
+  "projects/difuzni-prezkum.qmd": {
+    "difuzni-prezkum.html": "502141ce"
+  },
+  "publications.qmd": {
+    "publications.html": "43be3a86"
+  },
+  "cv.qmd": {
+    "cv.html": "bc80a8b0"
+  }
+}

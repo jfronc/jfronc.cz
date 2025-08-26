@@ -1,0 +1,15 @@
+{
+  "hash": "185e9036c3fb3cbc005e27de0a357304",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Publikace\"\nformat: html\ndate: last-modified\n---\n\n### Články\n\n- Fronc, Jaromír. K pramenům vázanosti správního orgánu podzákonnými předpisy. *Právník*, 2024, č. 6, str. 587–604. \n- Fronc, Jaromír. Difúzní přezkum, okrajová nesouladnost a právní jistota. *Jurisprudence*, 2022, č. 2, str. 10–21. \n- Fronc, Jaromír. [Úplná znění právních předpisů v systémech eSbírka a eLegislativa](https://journals.muni.cz/revue/article/view/21614). *Revue pro právo a technologie*, 2022, č. 26, str. 71–107.  [[pdf](https://journals.muni.cz/revue/article/download/21614/28577/53761)]\n- Fronc, Jaromír. Usnesení vlády jako právní předpis: terminologický zmatek sui generis. *Jurisprudence*, 2021, č. 1, str. 33–38. \n- Fronc, Jaromír. Vliv referenčního rámce přezkumu na rozhodování soudů a správních orgánů. *Právník*, 2021, č. 3, str. 195–209. \n- Fronc, Jaromír. [Účinnost právních předpisů včera, dnes a zítra](https://mv.gov.cz/webpm/clanek/spravni-pravo-cislo-5-2021.aspx). *Legislativní příloha Správního práva*, 2021, č. III, str. LVIII–LXXVII.  [[pdf](https://mv.gov.cz/soubor/lg-5-21-fronc-pdf.aspx)]\n- Fronc, Jaromír. [Výklad ve prospěch adresátů správního práva a jeho limity](https://mv.gov.cz/clanek/spravni-pravo-cislo-7-2020.aspx). *Správní právo*, 2020, č. 7, str. 358–382.  [[pdf](https://mv.gov.cz/soubor/jaromir-fronc-pdf.aspx)]\n\n\n### Příspěvky ve sbornících, kapitoly v knihách\n\n- Fronc, Jaromír. Difúzní přezkum statutárních předpisů.  \nIn: Wintr, Jan, Antoš, Marek (eds),. *Samospráva* (str. 40–45). Praha: Leges, 2024. ISBN 978-80-7502-778-8\n- Fronc, Jaromír. Technické aspekty odklízení předpisů zasahujících do lidských práv.  \nIn: Žák Krzyžanková, Katarzyna a kol.,. *Lidská práva na roz(s)cestí* (str. 185–200). Praha: Auditorium, 2022. ISBN 978-80-87284-94-0\n- Fronc, Jaromír. Hledání smysluplné zákonné úpravy přezkumu krizových opatření a nouzového stavu.  \nIn: Antoš, Marek, Wintr, Jan (eds),. *Vojna a mír* (str. 99–113). Praha: Leges, 2022. ISBN 978-80-7502-654-5",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

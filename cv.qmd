@@ -1,0 +1,49 @@
+---
+title: "Životopis"
+format: html
+date: last-modified
+---
+
+JUDr. **Jaromír Fronc** (* 1996) 
+
+### Vzdělání  
+**Ph.D.** – Univerzita Karlova, Právnická fakulta  
+*2020–dosud*  
+obor: Teoretické právní vědy – Správní právo a správní věda  
+
+**JUDr.** – Univerzita Karlova, Právnická fakulta  
+*2021*  
+
+**Mgr.** – Univerzita Karlova, Právnická fakulta  
+*2015–2020*  
+program: Právo a právní věda, obor: Právo  
+prospěl s vyznamenáním  
+diplomová práce: [Vztahy mezi soudy a veřejnou správou při výkladu práva](https://dspace.cuni.cz/handle/20.500.11956/122052)
+
+specializační moduly: Legislativní, Ústavněprávní, Právněteoretický a právněfilozofický, Správní právo  
+<small>3. místo v česko-slovenském kole Studentské vědecké a odborné činnosti 2020 (sekce Teorie práva, ústavní právo, lidská práva; společenské vědy)</small>  
+<small>2. místo v česko-slovenském kole Studentské vědecké a odborné činnosti 2019 (sekce Správní právo, finanční právo, právo sociálního zabezpečení, právo životního prostředí)</small>  
+
+### Pracovní zkušenosti  
+**Nakladatelství C. H. Beck, s.r.o.**  
+*2019–dosud*  
+**Content manager Beck-online**  
+- odpovědnost za kvalitu obsahu Beck-online, jeho aktualizaci a obohacování o metadata  
+- vedení týmu právníků  
+- koordinace vývoje aplikace, komunikace s programátory  
+
+*2018–2019*  
+**Odborný redaktor Beck-online**  
+
+*2017–2018*  
+**Právní asistent Beck-online**  
+
+### Jazykové znalosti  
+**Angličtina:** aktivně  
+<small>First Certificate in English (2015) – Grade A = C1 level</small>
+
+**Němčina:** převážně pasivně  
+
+**Francouzština:** zcela pasivně  
+
+**R:** mírně pokročilý  

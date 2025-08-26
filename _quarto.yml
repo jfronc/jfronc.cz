@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "Jaromír Fronc"
+  navbar:
+    right:
+      - text: CV
+        href: cv.qmd
+        
+      - text: Publikace
+        href: publications.qmd
+        
+      - text: Projekty
+        menu: 
+          - text: Difúzní přezkum
+            href: projects/difuzni-prezkum.qmd
+        
+  page-footer:
+      left: "Poslední aktualizace: {{< now \"%Y-%m-%d\" >}}"
+      center:
+        - text: "About"
+          href: about.qmd
+      right:
+        - icon: github
+          href: https://github.com/jfronc
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
+

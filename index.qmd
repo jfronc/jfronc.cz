@@ -1,0 +1,20 @@
+---
+title: "Jaromír Fronc"
+about:
+  template: jolla
+  links:
+    - icon: envelope
+      text: E-mail
+      href: mailto:jaromir.fronc@gmail.com
+    - icon: github
+      text: GitHub
+      href: https://github.com/jfronc
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jarom%C3%ADr-fronc-a643262b/
+    - icon: twitter-x
+      text: Twitter
+      href: https://twitter.com/jfronc
+---
+
+Content manager Beck-online | Doktorand na PF UK v oboru Správní právo a správní věda

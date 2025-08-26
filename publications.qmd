@@ -1,0 +1,59 @@
+---
+title: "Publikace"
+format: html
+date: last-modified
+---
+
+```{r echo = FALSE, warning = FALSE, message = FALSE, results = 'asis'}
+xfun::pkg_attach("tidyverse", "magrittr")
+
+pubs <- readxl::read_xlsx("data/publikace.xlsx", col_types = "text") |>
+  mutate(
+    Pages = str_replace(Pages, "-", "–"),
+    Year = as.integer(Year)
+    )  |>
+  arrange(desc(Year))
+
+# Split into two groups
+articles <- pubs |> filter(`Item Type` == "journalArticle")
+chapters <- pubs |> filter(`Item Type` == "bookSection")
+
+# Helper: link builder
+make_link <- function(title, url, doi) {
+  ifelse(!is.na(url), 
+         str_glue("[{title}]({url})"),
+         ifelse(!is.na(doi),
+                str_glue("[{title}](https://doi.org/{doi})"),
+                title))
+}
+
+make_pdf <- function(fulltext) {
+  ifelse(!is.na(fulltext), 
+         str_glue(" [[pdf]({fulltext})]"),
+         "")
+}
+
+# ---- Style 1: Journal Articles ----
+article_items <- articles |>
+  mutate(
+    # entry = paste0(Author, Title, `Publication Title`)
+    entry = str_glue("
+     - {Author}. {make_link(Title, Url, DOI)}. *{`Publication Title`}*, {Year}, č. {Issue}, str. {Pages}. {make_pdf(Fulltext)}
+     ")
+  )
+
+# ---- Style 2: Book Chapters ----
+chapter_items <- chapters |>
+  mutate(
+    entry = str_glue("- {Author}. {make_link(Title, Url, DOI)}.  
+      In: {`Book Author`},. *{`Publication Title`}* (str. {Pages}). {Place}: {Publisher}, {Year}. ISBN {ISBN}")
+  )
+
+# Print sections
+cat("### Články\n\n")
+cat(article_items$entry, sep="\n")
+
+cat("\n\n### Příspěvky ve sbornících, kapitoly v knihách\n\n")
+cat(chapter_items$entry, sep="\n")
+
+```
