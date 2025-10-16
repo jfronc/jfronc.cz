@@ -1,0 +1,16 @@
+name: Render Quarto Project
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Render site
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+          path: _site
