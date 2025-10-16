@@ -2,4 +2,21 @@
 title: "Difúzní přezkum právních předpisů"
 ---
 
-Na této stránce bude komunikován můj disertační projekt.
+Moje disertační práce se věnuje přezkumu právních předpisů se zvláštním zaměřením na aplikaci čl. 95 odst. 1 Ústavy. V této souvislosti jsem shromáždil případy, kdy správní soudy deklarovaly nezákonnost aplikovaného prodzákonného předpisu.
+
+Tabulka případů ke stažení: [.rds](../../data/difuzni-prezkum.rds) 
+
+```{r table, echo = FALSE, message = FALSE}
+xfun::pkg_attach("dplyr", "stringr", "magrittr", "gt")
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+df <- readRDS("../data/difuzni-prezkum.rds") 
+df %<>% mutate(Trvalo = Datum - Od,
+               Datum = as.character(Datum) |>
+                str_replace("(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2})", "\\3. \\2. \\1"),
+               Ustanovení = case_when(
+                 str_detect(Ustanovení, "^\\(") ~ NA,
+                 .default = Ustanovení)
+              )
+df %>% gt()
+```
