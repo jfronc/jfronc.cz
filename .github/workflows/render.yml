@@ -1,6 +1,6 @@
 name: Render Quarto Project
 
-on: push
+# on: push
 
 jobs:
   build:
