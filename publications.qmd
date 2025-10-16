@@ -46,7 +46,7 @@ article_items <- articles |>
 chapter_items <- chapters |>
   mutate(
     entry = str_glue("- {Author}. {make_link(Title, Url, DOI)}.  
-      In: {`Book Author`},. *{`Publication Title`}* (str. {Pages}). {Place}: {Publisher}, {Year}. ISBN {ISBN}")
+      In: {`Book Author`}. *{`Publication Title`}* (str. {Pages}). {Place}: {Publisher}, {Year}. ISBN {ISBN}.")
   )
 
 # Print sections
