@@ -14,11 +14,27 @@ xfun::pkg_attach("dplyr", "stringr", "magrittr", "reactable")
 
 df <- readRDS("../data/difuzni-prezkum.rds") 
 df %<>% mutate(Trvalo = Datum - Od,
-               Datum = as.character(Datum) |>
-                str_replace("(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2})", "\\3. \\2. \\1"),
                Ustanovení = case_when(
                  str_detect(Ustanovení, "^\\(") ~ NA,
                  .default = Ustanovení)
-              )
-df %>% reactable(searchable = TRUE)
+              ) %>%
+  select(!c(Citace, Oblast, Poznámka))
+
+cz_date <- function(x) {
+  x <- format(x, "%e. %m. %Y") |>
+    stringr::str_replace("\\s0", " ")
+  return(x)
+}
+
+df %>% reactable(
+  columns = list(
+    Datum = colDef(
+      cell = cz_date
+      ),
+    Od = colDef(
+      cell = cz_date
+      )
+    ),
+  searchable = TRUE,
+  compact = TRUE)
 ```
