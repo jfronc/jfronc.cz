@@ -27,9 +27,14 @@ make_link <- function(title, url, doi) {
                 title))
 }
 
-make_pdf <- function(fulltext) {
-  ifelse(!is.na(fulltext), 
-         str_glue(" [[pdf]({fulltext})]"),
+make_pdf <- function(link) {
+  ifelse(!is.na(link), 
+         str_glue(" [[pdf]({link})]"),
+         "")
+}
+make_bo <- function(link) {
+  ifelse(!is.na(link), 
+         str_glue(" [[Beck-online]({link})]"),
          "")
 }
 
@@ -38,7 +43,7 @@ article_items <- articles |>
   mutate(
     # entry = paste0(Author, Title, `Publication Title`)
     entry = str_glue("
-     - {Author}. {make_link(Title, Url, DOI)}. *{`Publication Title`}*, {Year}, č. {Issue}, str. {Pages}. {make_pdf(Fulltext)}
+     - {Author}. {make_link(Title, Url, DOI)}. *{`Publication Title`}*, {Year}, č. {Issue}, str. {Pages}. {make_pdf(Fulltext)} {make_bo(BO)}
      ")
   )
 

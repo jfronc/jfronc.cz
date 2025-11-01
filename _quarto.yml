@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Jaromír Fronc"
+  favicon: data/favicon.jpg
   navbar:
     right:
       - text: CV
