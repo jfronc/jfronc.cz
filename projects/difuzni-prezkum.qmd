@@ -7,7 +7,7 @@ format:
 
 Moje disertační práce, odevzdaná v říjnu 2025, se věnuje přezkumu právních předpisů se zvláštním zaměřením na aplikaci čl. 95 odst. 1 Ústavy. V této souvislosti jsem shromáždil celkem 62 případů, kdy správní soudy deklarovaly nezákonnost aplikovaného prodzákonného předpisu.
 
-Tabulka případů ke stažení: [.rds](../../data/difuzni_prezkum.rds), [.xlsx](../../data/difuzni_prezkum.xlsx)
+Tabulka případů ke stažení: [.rds](/data/difuzni_prezkum.rds), [.xlsx](/data/difuzni_prezkum.xlsx)
 
 ```{r table, echo = FALSE, message = FALSE, warning = FALSE}
 xfun::pkg_attach("dplyr", "stringr", "magrittr", "reactable")
