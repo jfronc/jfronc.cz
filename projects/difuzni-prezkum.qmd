@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-Moje disertační práce, odevzdaná v říjnu 2025, se věnuje přezkumu právních předpisů se zvláštním zaměřením na aplikaci čl. 95 odst. 1 Ústavy. V této souvislosti jsem shromáždil celkem 62 případů, kdy správní soudy deklarovaly nezákonnost aplikovaného prodzákonného předpisu.
+Moje disertační práce, odevzdaná v říjnu 2025, se věnuje přezkumu právních předpisů se zvláštním zaměřením na aplikaci čl. 95 odst. 1 Ústavy. V této souvislosti jsem shromáždil celkem 62 případů, kdy správní soudy deklarovaly nezákonnost aplikovaného podzákonného předpisu.
 
 Tabulka případů ke stažení: [.rds](/data/difuzni_prezkum.rds), [.xlsx](/data/difuzni_prezkum.xlsx)
 
@@ -13,12 +13,16 @@ Tabulka případů ke stažení: [.rds](/data/difuzni_prezkum.rds), [.xlsx](/dat
 xfun::pkg_attach("dplyr", "stringr", "magrittr", "reactable")
 
 df <- readRDS("../data/difuzni_prezkum.rds") 
-df %<>% mutate(Trvalo = Datum - Od,
-               Ustanovení = case_when(
+df %<>% mutate(Ustanovení = case_when(
                  str_detect(Ustanovení, "^\\(") ~ NA,
-                 .default = Ustanovení)
+                 .default = Ustanovení),
+               Číslo = case_when(
+                    !is.na(Ustanovení) ~ paste0("<div>", Číslo,
+                    "<br><small>", Ustanovení, "</small></div>"),
+                    .default = Číslo),
+               Trvalo = Datum - Od
               ) %>%
-  select(!c(Citace, Oblast, Poznámka))
+  select(!c(Citace, Oblast, Zákon, Poznámka))
 
 cz_date <- function(x) {
   x <- format(x, "%e. %m. %Y") |>
@@ -28,12 +32,14 @@ cz_date <- function(x) {
 
 df %>% reactable(
   columns = list(
-    Datum = colDef(
-      cell = cz_date
-      ),
-    Od = colDef(
-      cell = cz_date
-      )
+    Datum = colDef(cell = cz_date),
+    Typ = colDef(width = 55),
+    Číslo = colDef(html = TRUE),
+    Název = colDef(width = 200),
+    `Rozsah derogace` = colDef(width = 90),
+    Od = colDef(cell = cz_date),
+    Trvalo = colDef(name = "Trvalo dní", width = 60),
+    Ustanovení = colDef(show = FALSE)
     ),
   searchable = TRUE,
   highlight = TRUE,
