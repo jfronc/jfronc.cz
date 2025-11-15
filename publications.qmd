@@ -50,7 +50,7 @@ article_items <- articles |>
 # ---- Style 2: Book Chapters ----
 chapter_items <- chapters |>
   mutate(
-    entry = str_glue("- {Author}. {make_link(Title, Url, DOI)}. In: {`Book Author`}. *{`Publication Title`}* (str. {Pages}). {Place}: {Publisher}, {Year}. {make_pdf(Fulltext)}")
+    entry = str_glue("- {Author}. *{Title}*. In: {`Book Author`}. *{make_link(`Publication Title`, Url, DOI)}*. {Place}: {Publisher}, {Year}, str. {Pages}. {make_pdf(Fulltext)}")
   )
 
 # Print sections

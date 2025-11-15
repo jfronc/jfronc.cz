@@ -16,6 +16,8 @@ website:
         menu: 
           - text: Difúzní přezkum
             href: projects/difuzni-prezkum.qmd
+          - text: Náhradníci
+            href: https://nahradnici.jfronc.cz/
         
   page-footer:
       left: "Poslední aktualizace: {{< now \"%Y-%m-%d\" >}}"
