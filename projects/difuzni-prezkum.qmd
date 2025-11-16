@@ -33,6 +33,7 @@ cz_date <- function(x) {
 df %>% reactable(
   columns = list(
     Datum = colDef(cell = cz_date),
+    Soud = colDef(width = 90),
     Typ = colDef(width = 55),
     Číslo = colDef(html = TRUE),
     Název = colDef(width = 200),
