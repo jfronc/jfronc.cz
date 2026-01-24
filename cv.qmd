@@ -4,11 +4,11 @@ format: html
 date: last-modified
 ---
 
-JUDr. **Jaromír Fronc** (* 1996) 
+JUDr. **Jaromír Fronc**, Ph.D. (* 1996) 
 
 ### Vzdělání  
 **Ph.D.** – Univerzita Karlova, Právnická fakulta  
-*2020–dosud*  
+*2020–2026*  
 obor: Teoretické právní vědy – Správní právo a správní věda  
 
 **JUDr.** – Univerzita Karlova, Právnická fakulta  
@@ -21,7 +21,7 @@ program: Právo a právní věda, obor: Právo
 prospěl s vyznamenáním  
 diplomová práce: [Vztahy mezi soudy a veřejnou správou při výkladu práva](https://dspace.cuni.cz/handle/20.500.11956/122052)
 
-specializační moduly: Legislativní, Ústavněprávní, Právněteoretický a právněfilozofický, Správní právo  
+<small>specializační moduly: Legislativní, Ústavněprávní, Právněteoretický a právněfilozofický, Správní právo</small>  
 <small>3. místo v česko-slovenském kole Studentské vědecké a odborné činnosti 2020 (sekce Teorie práva, ústavní právo, lidská práva; společenské vědy)</small>  
 <small>2. místo v česko-slovenském kole Studentské vědecké a odborné činnosti 2019 (sekce Správní právo, finanční právo, právo sociálního zabezpečení, právo životního prostředí)</small>  
 
@@ -38,6 +38,9 @@ specializační moduly: Legislativní, Ústavněprávní, Právněteoretický a 
 
 *2017–2018*  
 **Právní asistent Beck-online**  
+
+**Nezávislý konzultant pro legislativu**  
+- spolupráce na tvorbě návrhů právních předpisů, převážně z legislativně technického hlediska
 
 ### Jazykové znalosti  
 **Angličtina:** aktivně  

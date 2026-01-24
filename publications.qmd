@@ -37,6 +37,11 @@ make_bo <- function(link) {
          str_glue(" [[Beck-online]({link})]"),
          "")
 }
+make_pg <- function(pg) {
+  ifelse(!is.na(pg), 
+         str_glue(", str. {pg}"),
+         "")
+}
 
 # ---- Style 1: Journal Articles ----
 article_items <- articles |>
@@ -50,7 +55,7 @@ article_items <- articles |>
 # ---- Style 2: Book Chapters ----
 chapter_items <- chapters |>
   mutate(
-    entry = str_glue("- {Author}. *{Title}*. In: {`Book Author`}. *{make_link(`Publication Title`, Url, DOI)}*. {Place}: {Publisher}, {Year}, str. {Pages}. {make_pdf(Fulltext)}")
+    entry = str_glue("- {Author}. *{Title}*. In: {`Book Author`}. *{make_link(`Publication Title`, Url, DOI)}*. {Place}: {Publisher}, {Year}{make_pg(Pages)}. {make_pdf(Fulltext)} {make_bo(BO)}")
   )
 
 # Print sections

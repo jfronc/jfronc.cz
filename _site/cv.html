@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-10-16">
+<meta name="dcterms.date" content="2026-01-24">
 
 <title>Životopis – Jaromír Fronc</title>
 <style>
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./data/favicon.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-d9589ad4e98504035195c70aa99e1e7d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed576ce243f35bf3f83c58f608c88421.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,6 +82,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Jaromír Fronc</span>
     </a>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 16, 2025</p>
+      <p class="date">January 24, 2026</p>
     </div>
   </div>
   
@@ -164,11 +167,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>JUDr. <strong>Jaromír Fronc</strong> (* 1996)</p>
+<p>JUDr. <strong>Jaromír Fronc</strong>, Ph.D.&nbsp;(* 1996)</p>
 <section id="vzdělání" class="level3">
 <h3 class="anchored" data-anchor-id="vzdělání">Vzdělání</h3>
 <p><strong>Ph.D.</strong> – Univerzita Karlova, Právnická fakulta<br>
-<em>2020–dosud</em><br>
+<em>2020–2026</em><br>
 obor: Teoretické právní vědy – Správní právo a správní věda</p>
 <p><strong>JUDr.</strong> – Univerzita Karlova, Právnická fakulta<br>
 <em>2021</em><br>
@@ -178,7 +181,7 @@ diplomová práce <a href="https://dspace.cuni.cz/handle/20.500.11956/125224">uz
 program: Právo a právní věda, obor: Právo<br>
 prospěl s vyznamenáním<br>
 diplomová práce: <a href="https://dspace.cuni.cz/handle/20.500.11956/122052">Vztahy mezi soudy a veřejnou správou při výkladu práva</a></p>
-<p>specializační moduly: Legislativní, Ústavněprávní, Právněteoretický a právněfilozofický, Správní právo<br>
+<p><small>specializační moduly: Legislativní, Ústavněprávní, Právněteoretický a právněfilozofický, Správní právo</small><br>
 <small>3. místo v česko-slovenském kole Studentské vědecké a odborné činnosti 2020 (sekce Teorie práva, ústavní právo, lidská práva; společenské vědy)</small><br>
 <small>2. místo v česko-slovenském kole Studentské vědecké a odborné činnosti 2019 (sekce Správní právo, finanční právo, právo sociálního zabezpečení, právo životního prostředí)</small></p>
 </section>
@@ -194,6 +197,8 @@ diplomová práce: <a href="https://dspace.cuni.cz/handle/20.500.11956/122052">V
 <strong>Odborný redaktor Beck-online</strong></p>
 <p><em>2017–2018</em><br>
 <strong>Právní asistent Beck-online</strong></p>
+<p><strong>Nezávislý konzultant pro legislativu</strong><br>
+- spolupráce na tvorbě návrhů právních předpisů, převážně z legislativně technického hlediska</p>
 </section>
 <section id="jazykové-znalosti" class="level3">
 <h3 class="anchored" data-anchor-id="jazykové-znalosti">Jazykové znalosti</h3>
@@ -258,13 +263,14 @@ diplomová práce: <a href="https://dspace.cuni.cz/handle/20.500.11956/122052">V
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -610,7 +616,7 @@ diplomová práce: <a href="https://dspace.cuni.cz/handle/20.500.11956/122052">V
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Poslední aktualizace: 2025-11-16</p>
+<p>Poslední aktualizace: 2026-01-24</p>
 </div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
