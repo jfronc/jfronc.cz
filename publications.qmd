@@ -15,6 +15,7 @@ pubs <- readxl::read_xlsx("data/publikace.xlsx", col_types = "text") |>
   arrange(desc(Year))
 
 # Split into two groups
+books <- pubs |> filter(`Item Type` == "book")
 articles <- pubs |> filter(`Item Type` == "journalArticle")
 chapters <- pubs |> filter(`Item Type` == "bookSection")
 
@@ -43,6 +44,14 @@ make_pg <- function(pg) {
          "")
 }
 
+# ---- Style 0: Books ----
+book_items <- books |>
+  mutate(
+    # entry = paste0(Author, Title, `Publication Title`)
+    entry = str_glue("
+     - {Author}. {make_link(Title, Url, DOI)}. {Place}: {Publisher}, {Year}{make_pg(Pages)}. {make_pdf(Fulltext)} {make_bo(BO)}")
+  )
+
 # ---- Style 1: Journal Articles ----
 article_items <- articles |>
   mutate(
@@ -59,7 +68,10 @@ chapter_items <- chapters |>
   )
 
 # Print sections
-cat("### Články\n\n")
+cat("### Kniha\n\n")
+cat(book_items$entry, sep="\n")
+
+cat("\n\n### Články\n\n")
 cat(article_items$entry, sep="\n")
 
 cat("\n\n### Příspěvky ve sbornících, kapitoly v knihách\n\n")
