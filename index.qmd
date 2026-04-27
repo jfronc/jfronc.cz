@@ -3,12 +3,15 @@ title: "Jaromír Fronc"
 about:
   template: jolla
   links:
-    - icon: envelope
+    - icon: envelope # https://icons.getbootstrap.com/
       text: E-mail
       href: mailto:jaromir.fronc@gmail.com
     - icon: github
       text: GitHub
       href: https://github.com/jfronc
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.cz/citations?user=ftqPxtgAAAAJ
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/jarom%C3%ADr-fronc-a643262b/
@@ -17,4 +20,27 @@ about:
       href: https://twitter.com/jfronc
 ---
 
-Pracuji jako Content manager Beck-online. Jsem absolventem doktorského studia na PF UK v oboru Správní právo a správní věda. Mám také zkušenosti s přípravou návrhů právních předpisů.
+:::: {.columns}
+
+::: {.column width="73%"}
+
+Pracuji jako Content manager právního informačního systému [Beck-online](https://beck-online.cz/). Jsem absolventem doktorského studia na PF UK v oboru Správní právo a správní věda. Mám také zkušenosti s přípravou návrhů právních předpisů.
+
+::: {.callout-warning appearance="minimal" style="text-align: left;"}
+
+## Nová kniha
+
+Nakladatelství C. H. Beck právě vydává moji monografii [Difúzní přezkum právních předpisů](https://www.beck.cz/difuzni-prezkum-pravnich-predpisu).
+
+:::
+:::
+
+::: {.column width="8%"}
+
+:::
+
+::: {.column width="19%"}
+[![](https://www.beck.cz/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/4/3/4346_~000000Y02.jpg)](https://www.beck.cz/difuzni-prezkum-pravnich-predpisu)
+:::
+
+::::
