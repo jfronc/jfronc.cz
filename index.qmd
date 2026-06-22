@@ -24,13 +24,14 @@ about:
 
 ::: {.column width="73%"}
 
-Pracuji jako Content manager právního informačního systému [Beck-online](https://beck-online.cz/). Jsem absolventem doktorského studia na PF UK v oboru Správní právo a správní věda. Mám také zkušenosti s přípravou návrhů právních předpisů.
+Pracuji jako Content manager právního informačního systému [Beck-online](https://beck-online.cz/). Jsem absolventem doktorského studia na Právnické fakultě UK v oboru Správní právo a správní věda. Mám také zkušenosti s přípravou návrhů právních předpisů.
 
 ::: {.callout-warning appearance="minimal" style="text-align: left;"}
 
 ## Nová kniha
 
-Nakladatelství C. H. Beck právě vydává moji monografii [Difúzní přezkum právních předpisů](https://www.beck.cz/difuzni-prezkum-pravnich-predpisu).
+Nakladatelství C. H. Beck vydalo moji monografii [Difúzní přezkum právních předpisů](https://www.beck.cz/difuzni-prezkum-pravnich-predpisu).
+Kniha je také dostupná v [Beck-online](https://app.beck-online.cz/bo/document-view.seam?documentId=nnptembsgzpwk4djge4tk).
 
 :::
 :::
